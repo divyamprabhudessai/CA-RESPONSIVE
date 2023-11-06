@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:  'Nunito Sans', 'Roboto';
+    background-color: rgb(28, 27, 27);
+}
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    margin-left: 20px;
+    margin-right: 50px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 2%;
+    background: transparent;
+    position: static;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-left .logo{
+    margin-right: 20px;
+    width: 100px;
+    height: 25px;
+    padding-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+a .start{
+    font-weight: bold;
+}
+
+.nav-right img{
+    padding: 10px;
+}
+
+.background{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(28, 27, 27)), url(./assets/Title-Image.png);
+    background-size: cover;
+    background-position: center;
+    height: 1100px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.show{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 490px;
+    left: 99px;
+}
+
+.show p{
+    font-size: 25px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.show div{
+    padding: 9px;
+}
+
+
+h1{
+    padding: 9px;
+    position: absolute;
+    top: 510px;
+    left: 90px;
+    font-size: 150px;
+    font-weight: bold;
+    color: white;
+}
+
+button{
+    border: none;
+    border-radius: 5%;
+    padding: 10px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 690px;
+    left: 90px;
+}
+
+.more-info{
+    opacity: 0.4;
+    color: rgb(0, 0, 0);
+    width: 120px;
+}
+.play-icon{
+    background-color: whitesmoke;
+    margin-right: 5px;
+}
+
+.detail{
+    margin-right: 5px
+}
+
+.play{
+    margin-right: 15px;
+}
+
+.seeAgain{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 830px;
+    left: 99px;
+
+}
+
+.seeAgain p{
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+.seeAgain img{
+    size: 10px;
+    color: white;
+}
+
+.vid-list1{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 890px;
+    left: 30px;
+}
+
+.container{
+    background-color: rgb(27, 25, 25);
+}
+
+.trendingNow{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 1100px;
+    left: 99px;
+}
+
+.trendingNow p{
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+.trendingNow img{
+    size: 10px;
+    color: white;
+}
+
+.vid-list2{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 1150px;
+    left: 30px;
+}
+
+.Sci-fi{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 1350px;
+    left: 99px;
+}
+
+.Sci-fi p{
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+.vid-list3{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 1400px;
+    left: 30px;
+}
+
+.image{
+    display: flex;
+    position: absolute;
+    top: 1630px;
+    left: 360px;
+}
+
+.image img{
+    margin-right: 15px;
+    height: 30px;
+    width: 30px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-gap: 30px;
+    padding: 10px;
+    color: rgb(119, 118, 118);
+    position: absolute;
+    top: 1680px;
+    left: 350px;
+}
+
+.text{
+    text-align: center;
+    padding: 10px;
+    width: 90px;
+    border: 2px solid rgb(119, 118, 118);
+    color: rgb(119, 118, 118);
+    position: absolute;
+    top: 1890px;
+    left: 355px;
+}
+
+.text2{
+    text-align: center;
+    color: rgb(119, 118, 118);
+    position: absolute;
+    top: 1950px;
+    left: 355px;
+}
+
+.start{
+    font-size: 20px;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .nav{
+        margin: 0;
+        width: 100%;
+    }
+
+    .start{
+        font-size: 0.7rem;
+    }
+
+    .starts{
+        font-size: 0.7rem;
+    }
+
+    .nav-left .logo{
+        width: 4rem;
+        height: 1rem;
+    }
+
+    .nav-right img{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .show {
+        top: 30vh;
+        left: 17vw;
+        text-align: center;
+    }
+
+    .show p {
+        font-size: 20px;
+    }
+
+    .show div {
+        padding: 5px;
+    }
+
+    h1 {
+        top: 35vh;
+        left: 16vw;
+        font-size: 100px;
+    }
+
+    .buttons {
+        top:50vh;
+        left: 15vw;
+    }
+
+    .buttons button {
+        padding: 7px;
+    }
+
+    .seeAgain {
+        top: 75vh;
+        left: 45vw;
+        text-align: center;
+    }
+
+    .seeAgain p {
+        font-size: 16px;
+    }
+
+    .seeAgain img {
+        height: 15px;
+    }
+
+    .vid-list1 {
+        top: 80vh;
+        left: 35vw;
+        flex-direction: column;
+        gap: 2vh;
+
+    }
+
+    .container {
+        background-color: rgb(27, 25, 25);
+    }
+
+    .trendingNow {
+        top: 180vh;
+        left: 45vw;
+        text-align: center;
+    }
+
+    .trendingNow p {
+        font-size: 16px;
+    }
+
+    .trendingNow img {
+        height: 15px;
+    }
+
+    .vid-list2 {
+        left: 35vw;
+        top: 185vh;
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .Sci-fi {
+        top: 285vh;
+        left: 45vw;
+        text-align: center;
+    }
+
+    .Sci-fi p {
+        font-size: 16px;
+    }
+
+    .vid-list3 {
+        top: 290vh;
+        left: 35vw;
+        flex-direction: column;
+    }
+
+
+    .image {
+        top: 380vh;
+        left: 8vw;
+        justify-content: center;
+    }
+
+    .image img {
+        margin: 0 15px;
+        height: 25px;
+        width: 25px;
+    }
+
+    .grid-container {
+        top: 390vh;
+        left: 9vw;
+        width: 2vw;
+        gap: 1vw;
+        grid-template-columns: 300px 300px;
+    }
+
+    .grid-container div{
+        width: 1vw;
+    }
+
+    .text {
+        top: 425vh;
+        left: 10vw;
+    }
+
+    .text2 {
+        top: 435vh;
+        left: 10vw;
+    }
+
+    .background {
+        background-position: right;
+        width: 50rem;
+        height: 40rem;
+        position: absolute;
+    
+    }
+    
+    .nav-right, .flex-div{
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-left{
+        margin-left: 2vw;
+    }
+
+    .image img{
+        margin-right: 0;
+    }
+}
